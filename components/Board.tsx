@@ -15,12 +15,10 @@ function Board() {
     getBoard();
   }, [getBoard]);
 
-  const handleOnDragEnd = (result: DropResult) => {
-       
-  };
+  const handleOnDragEnd = (result: DropResult) => {};
 
   return (
-    <DragDropContext onDragEnd={ handleOnDragEnd}>
+    <DragDropContext onDragEnd={handleOnDragEnd}>
       <Droppable droppableId="board" direction="horizontal" type="column">
         {(provided) => (
           <div
